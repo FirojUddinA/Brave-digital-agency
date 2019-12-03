@@ -1,0 +1,54 @@
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+
+// Small devices (portrait phones,less than 576px)
+@media (max-width: 575px) {
+
+}
+
+// Medium devices (landscape phones, less than 768px and up)
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+
+}
+
+@media only screen and (max-width: 768px) {
+  
+}
+
+// Large devices (tablets,less than 992px and up)
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    
+}
+
+@media only screen and (min-width: 768px) {
+    
+
+}
+
+
+// Extra large devices (desktops,less than 1200px and up)
+@media only screen and (max-width: 991px) {
+
+	.navbar-nav{
+		li{
+			a{
+
+				float: right;
+			}
+		}
+
+	}
+
+	p.s-title{
+		&:before,&:after{
+			display: none;
+		}
+	}
+    
+    
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}

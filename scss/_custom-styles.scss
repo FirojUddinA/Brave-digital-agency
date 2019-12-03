@@ -1,0 +1,339 @@
+@import "custom-variables";
+// Your custom styles
+
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,800&display=swap');
+$poppins : 'Poppins',
+sans-serif;
+
+/*
+	Common  Css
+ */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(225, 225, 225, 0.9)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+.bottom-img {
+    width: 100%;
+
+}
+
+#menu-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 11;
+}
+
+.navbar {
+    background: linear-gradient(to right, #a517ba, #5f1782);
+
+    .navbar-brand {
+        padding-left: 25px;
+        height: 40px;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .navbar-toggle {
+        outline: none;
+    }
+
+
+    .navbar-nav {
+        li {
+            padding: 0 10px;
+
+            a {
+                color: #ffffff;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+#banner {
+    background: linear-gradient(to right, #a517ba, #5f1782);
+    padding-top: 5%;
+    color: #ffffff;
+    .container{
+        padding: 50px 0 80px;
+    }
+
+    .banner-title {
+        font-size: 40px;
+        font-weight: 600;
+        margin-top: 100px;
+
+        text-transform: capitalize;
+    }
+
+    .banner-text {
+        text-transform: capitalize;
+
+    }
+
+    .play-btn {
+        width: 45px;
+        margin: 20px;
+        color: white;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-weight: normal;
+
+        img {
+            width: 40px;
+            margin-right: 10px;
+        }
+
+    }
+
+}
+
+h2.title {
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 20px;
+
+
+    &:before {
+        position: absolute;
+        content: '';
+        height: 4px;
+        width: 200px;
+        margin-left: -100px;
+        background: #5f1782;
+        display: block;
+        bottom: 2px;
+        left: 50%;
+    }
+
+    &:after {
+        position: absolute;
+        content: '';
+        height: 8px;
+        width: 60px;
+        margin-left: -30px;
+        background: #5f1782;
+        display: block;
+        bottom: 0;
+        left: 50%;
+    }
+}
+
+button.btn-primary {
+    border-radius: 40px;
+    background: linear-gradient(to right, #a517ba, #5f1782);
+
+
+}
+
+#services {
+    padding: 80px 0;
+
+    .service-img {
+        margin-top: 20px;
+        width: 100px;
+        height: 80px;
+
+    }
+
+    .services {
+        text-align: center;
+        padding: 20px;
+
+        h4 {
+            padding: 5px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            margin-top: 25px;
+            font-size: 22px;
+        }
+
+        .servicr-test {
+            text-transform: capitalize;
+            font-size: 14px;
+        }
+    }
+
+
+}
+
+
+#aboutUs {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+
+    .aboutUs {
+        .about-title {
+            font-size: 40px;
+            font-weight: 600;
+            margin-top: 8%;
+        }
+
+        ul {
+            margin-left: 20px;
+
+            li {
+                margin: 20px 0;
+                list-style: lower-alpha;
+            }
+        }
+    }
+
+}
+
+#testimonial {
+    padding: 80px 0;
+    background-color: #ffffff;
+
+    .testimonial {
+        margin-top: 50px;
+        border-left: 4px solid #7b1798;
+        margin-bottom: 50px;
+
+        img {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            margin: 0 10px;
+        }
+
+        .user-details {
+            display: inline-block;
+            font-size: 12px;
+        }
+    }
+
+}
+
+#social-_icon {
+    padding: 80px 0;
+    background-color: #f7f9fa;
+
+    p.s-title {
+        font-size: 36px;
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        line-height: 80px;
+
+        &:before {
+            position: absolute;
+            content: '';
+            top: 0;
+            right: 15%;
+            width: 80px;
+            height: 80px;
+            background-image: -webkit-linear-gradient(#f7f9fa, #f7f9fa), radial-gradient(circle at top left, #fd00da, #19d7f8);
+            background-clip: content-box, border-box;
+            background-origin: border-box;
+
+            border-top: 8px solid transparent;
+            border-right: 8px solid transparent;
+            box-sizing: border-box;
+
+        }
+
+        &:after {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: 15%;
+            width: 80px;
+            height: 80px;
+            box-sizing: border-box;
+            background-image: -webkit-linear-gradient(#f7f9fa, #f7f9fa), radial-gradient(circle at top left, #fd00da, #19d7f8);
+            background-clip: content-box, border-box;
+            background-origin: border-box;
+
+            border-bottom: 8px solid transparent;
+            border-left: 8px solid transparent;
+
+        }
+    }
+
+    text-align: center;
+
+    .social-icon {
+        margin-top: 40px;
+
+        display: inline-flex;
+
+        a {
+            margin: 20px 0;
+            transition: .5s;
+
+            img {
+                width: 80px;
+                height: 80px;
+            }
+
+            &:hover {
+                transform: translateY(10px);
+            }
+
+        }
+    }
+}
+
+
+footer#footer {
+    background: linear-gradient(to right, #a517ba, #5f1782);
+    color: #ffffff;
+
+    img.footer-img {
+        width: 100%;
+    }
+
+    .footer-box {
+        padding: 10px;
+
+        i.fa {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 25px;
+            background: linear-gradient(to right, #a517ba, #5f1782);
+            text-align: center;
+            margin-right: 15px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .form-control {
+            border-radius: 0;
+        }
+
+        .btn-primary {
+            border-radius: 0;
+        }
+    }
+
+    .copyright {
+        hr {
+            background: #ffffff;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 0;
+        }
+    }
+}
